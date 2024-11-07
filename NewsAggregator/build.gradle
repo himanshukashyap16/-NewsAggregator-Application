@@ -24,15 +24,16 @@ repositories {
 }
 
 dependencies {
-//	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 //	implementation 'org.springframework.boot:spring-boot-starter-scheduling'
-//	implementation 'org.apache.kafka:kafka-streams'
+	implementation 'org.apache.kafka:kafka-streams'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
-//	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'org.springframework.kafka:spring-kafka'
 	implementation 'com.squareup.okhttp3:okhttp:4.11.0'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'

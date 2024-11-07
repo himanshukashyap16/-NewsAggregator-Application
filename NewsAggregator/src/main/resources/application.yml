@@ -3,6 +3,8 @@ newsapis:
     - baseUrl: "https://newsapi.org/v2/everything"
       apiKey: "3593fbc0226d4ea48cc33aa213f6421c"
       fetchInterval: 300000
+      paginationType: "INCREMENTAL"
+      tableCode: "newsAPI"
       defaultQueryParams:
         q: "latest"
         sortBy: "popularity"
@@ -13,5 +15,7 @@ newsapis:
     - baseUrl: "https://newsdata.io/api/1/latest"
       apiKey: "pub_562463fdf057de38f5f800ac2d0f59a9b5966"
       fetchInterval: 600000
+      tableCode: "newsDataAPI"
+      paginationType: "NEXT_PAGE"
       defaultQueryParams:
         q: "India"

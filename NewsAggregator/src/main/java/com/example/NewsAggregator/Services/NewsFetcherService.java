@@ -14,6 +14,7 @@ public class NewsFetcherService {
     public String fetchNews(String baseUrl, Map<String,String> queryParams) throws IOException {
         String url = UrlBuilder.buildUrl(baseUrl, queryParams);
         return okHttpService.fetchData(url);
+
     }
 
 }

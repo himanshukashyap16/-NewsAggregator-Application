@@ -13,5 +13,7 @@ public class NewsApiConfig {
     private String apiKey;
     private Map<String,String> defaultQueryParams;
     private long fetchInterval;
+    private String paginationType;
+    private String tableCode;
 
 }
