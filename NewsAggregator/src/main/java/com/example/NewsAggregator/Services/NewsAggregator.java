@@ -52,7 +52,7 @@ public class NewsAggregator {
 
         try {
             String response = newsFetcherService.fetchNews(newsApiConfig.getBaseUrl(), queryParams);
-            System.out.println(nextPageKey);
+//            System.out.println(nextPageKey);
 //            System.out.println(response);
             String newNextPageValue = paginationStrategy.getNextPage(response, stringRedisTemplate, nextPageKey);
             if (newNextPageValue != null) {
