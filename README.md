@@ -1,11 +1,12 @@
 # NewsAggregator
 
 
-#FrontEnd Repo
+# FrontEnd Repo
+
 https://gitlab.com/himanshukashyap1122/frontend-for-newsaggregator
 
 
-Tech Stack for News Aggregator
+#  Tech Stack for News Aggregator
 1. Backend (Server-side)
 a. Java
 
@@ -37,40 +38,40 @@ e. Redis
 
 
 
-##Setting Up MongoDB on Ubuntu
+# Setting Up MongoDB on Ubuntu
 
-#Install MongoDB:
+##  Install MongoDB:
 
 sudo apt update
 sudo apt install -y mongodb-org
 
-#Start MongoDB:
+##  Start MongoDB:
 
 sudo systemctl start mongod
 
-#Enable MongoDB to start on boot:
+##  Enable MongoDB to start on boot:
 
 sudo systemctl enable mongod
 
-#Check MongoDB status:
+##  Check MongoDB status:
 
 sudo systemctl status mongod
 
-#Access MongoDB shell:
+## Access MongoDB shell:
 
     mongosh
 
-# Setting Up Redis on Ubuntu**
+# Setting Up Redis on Ubuntu
 
-    Install Redis:
+## Install Redis:
 
 sudo apt update
 sudo apt install redis-server
 
-Configure Redis (optional):
+##  Configure Redis (optional):
 
 sudo nano /etc/redis/redis.conf
-# Set supervised to systemd
+## Set supervised to systemd
 supervised systemd
 
 Start Redis:
@@ -85,14 +86,14 @@ Check Redis status:
 
 sudo systemctl status redis
 
-Test Redis:
+## Test Redis:
 
     redis-cli
     ping  # Should return PONG
 
 # Setting Up Kafka on Ubuntu
 
-    Install Java (if not installed):
+## Install Java (if not installed):
 
 sudo apt install openjdk-11-jdk
 
@@ -116,7 +117,7 @@ bin/kafka-topics.sh --create --topic news-aggregator-input-topic --bootstrap-ser
 bin/kafka-topics.sh --create --topic news-aggregator-output-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 
 1
 
-**Run the Project**
+# Run the Project 
 
 ./gradlew bootRun
 
