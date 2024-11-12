@@ -1,6 +1,5 @@
 package com.example.NewsAggregator.Services;
 
-import com.example.NewsAggregator.Models.News;
 import com.example.NewsAggregator.Models.NewsResponse;
 import com.example.NewsAggregator.NewsAggreagatorUtils.NewsAggregatorConstant;
 import com.example.NewsAggregator.NewsAggreagatorUtils.NewsResponseSerde;

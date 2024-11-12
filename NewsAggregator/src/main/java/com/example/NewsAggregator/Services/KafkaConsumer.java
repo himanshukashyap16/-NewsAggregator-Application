@@ -14,6 +14,8 @@ import java.util.List;
 public class KafkaConsumer {
 
     private final NewsWebSocketHandler newsWebSocketHandler;
+    @Autowired
+    private NewsEditServiceImpl editService;
 
     @Autowired
     public KafkaConsumer(NewsWebSocketHandler newsWebSocketHandler) {
@@ -27,7 +29,12 @@ public class KafkaConsumer {
             //System.out.println(newsResponse);
             newsWebSocketHandler.sendNewsUpdate(newsResponse);
         }
-
-
+    }
+    @KafkaListener(topics = NewsAggregatorConstant.OUTPUT_TOPIC, groupId = "consumer-group_id")
+    public void SaveNewsToDataBase(List<NewsResponse> newsResponseList) {
+        for (NewsResponse newsResponse : newsResponseList) {
+            //System.out.println(newsResponse);
+            editService.saveNews(newsResponse);
+        }
     }
 }

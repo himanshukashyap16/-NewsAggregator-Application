@@ -3,6 +3,7 @@ package com.example.NewsAggregator.Models;
 import com.fasterxml.jackson.annotation.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
 
 @Setter
@@ -11,6 +12,7 @@ import lombok.Setter;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class News {
 
+    @Id
     private Integer newsId;
 
     @JsonProperty("title")

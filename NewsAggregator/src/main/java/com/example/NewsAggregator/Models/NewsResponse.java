@@ -17,5 +17,4 @@ public class NewsResponse {
     @JsonAlias({"results", "articles"})
     private List<Article> articles;
 
-
 }
