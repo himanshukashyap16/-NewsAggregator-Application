@@ -4,30 +4,63 @@
 #FrontEnd Repo
 https://gitlab.com/himanshukashyap1122/frontend-for-newsaggregator
 
-**Setting Up MongoDB on Ubuntu**
 
-Install MongoDB:
+Tech Stack for News Aggregator
+1. Backend (Server-side)
+a. Java
+
+    Reason: Used for implementing backend logic, managing Kafka producers/consumers, and handling HTTP requests and responses.
+
+b. Spring Boot
+
+    Reason: A framework that simplifies the creation of Java-based microservices. You used it to manage APIs and integrate with other components like MongoDB and Kafka.
+
+c. Apache Kafka
+
+    Reason: Used for real-time data streaming and messaging between components. Kafka manages the flow of news articles between producers, processing streams, and consumers.
+
+    Kafka Topics:
+        news-aggregator-input-topic: For input news data.
+        news-aggregator-output-topic: For processed output.
+
+d. MongoDB
+
+    Reason: A NoSQL database used for storing processed news articles. It helps in efficiently storing and retrieving news data.
+
+    Integration: MongoDB is used for storing processed news data and enabling efficient querying.
+
+e. Redis
+
+    Reason: Used for caching to speed up read operations and reduce load times. It helps with storing frequently accessed data like popular news articles or metadata.
+
+    Integration: Caching the results of frequently searched news articles.
+
+
+
+##Setting Up MongoDB on Ubuntu
+
+#Install MongoDB:
 
 sudo apt update
 sudo apt install -y mongodb-org
 
-Start MongoDB:
+#Start MongoDB:
 
 sudo systemctl start mongod
 
-Enable MongoDB to start on boot:
+#Enable MongoDB to start on boot:
 
 sudo systemctl enable mongod
 
-Check MongoDB status:
+#Check MongoDB status:
 
 sudo systemctl status mongod
 
-Access MongoDB shell:
+#Access MongoDB shell:
 
     mongosh
 
-2. **Setting Up Redis on Ubuntu**
+# Setting Up Redis on Ubuntu**
 
     Install Redis:
 
@@ -57,7 +90,7 @@ Test Redis:
     redis-cli
     ping  # Should return PONG
 
-3. **Setting Up Kafka on Ubuntu**
+# Setting Up Kafka on Ubuntu
 
     Install Java (if not installed):
 
