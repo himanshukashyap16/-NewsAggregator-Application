@@ -1,8 +1,6 @@
 # NewsAggregator
 
-
-
-Setting Up MongoDB on Ubuntu
+**Setting Up MongoDB on Ubuntu**
 
 Install MongoDB:
 
@@ -25,7 +23,7 @@ Access MongoDB shell:
 
     mongosh
 
-2. Setting Up Redis on Ubuntu
+2. **Setting Up Redis on Ubuntu**
 
     Install Redis:
 
@@ -55,7 +53,7 @@ Test Redis:
     redis-cli
     ping  # Should return PONG
 
-3. Setting Up Kafka on Ubuntu
+3. **Setting Up Kafka on Ubuntu**
 
     Install Java (if not installed):
 
