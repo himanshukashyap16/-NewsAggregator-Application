@@ -3,7 +3,7 @@
 
 # FrontEnd Repo
 
-https://gitlab.com/himanshukashyap1122/frontend-for-newsaggregator
+https://github.com/himanshukashyap16/FrontEnd-For-NewsAggregator
 
 
 #  Tech Stack for News Aggregator
